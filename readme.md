@@ -1,5 +1,32 @@
-Algorithmic Trading Bot
-=======================
+Algorithmic Trading flowchart TB
+    A([1. Stock<br>Market Gains]) --> B([2. Acquire/Develop<br>Real Estate])
+    B --> C([3. Construction<br>Value-Add])
+    C --> D([4. Cash-Flowing<br>Property])
+    D --> E([5. Reinvest<br>Rental Profits])
+    E --> F([6. Portfolio<br>Compounding])
+    F --> A
+
+    A --- A_note
+    B --- B_note
+    C --- C_note
+    D --- D_note
+    E --- E_note
+    F --- F_note
+
+    A_note([<b>Build & Harvest</b><br>• Grow capital in stocks/ETFs<br>• Systematically take profits<br>• Recycle gains into RE])
+    B_note([<b>Buy Properties</b><br>• Undervalued or distressed<br>• Use stock-market gains<br>• Focus on cash-flow potential])
+    C_note([<b>Renovate / Build</b><br>• Leverage in-house labor<br>• Reduce costs w/ bulk orders<br>• Create instant equity])
+    D_note([<b>Generate Income</b><br>• Monthly rent<br>• Improved property value<br>• Additional equity growth])
+    E_note([<b>Diversify Returns</b><br>• Channel rental profits<br>  into stocks, bonds, crypto<br>• Maintain liquidity & growth])
+    F_note([<b>Scale & Repeat</b><br>• Recycle new gains into more<br>  property deals<br>• Continual loop of wealth])
+
+    classDef mainBox fill:#f0f9ff,stroke:#444,stroke-width:1px,color:#000,border-radius:6px
+    classDef noteBox fill:#fffffa,stroke:#ccc,stroke-width:1px,color:#444,stroke-dasharray: 3 3,border-radius:4px
+
+    class A,B,C,D,E,F mainBox
+    class A_note,B_note,C_note,D_note,E_note,F_note noteBox
+
+
 
 This bot makes use of the Schwab API to algorithmically trade stocks. 
 The bot will run at market open daily and will create a target portfolio based on the strategy below.
